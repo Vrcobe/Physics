@@ -516,7 +516,7 @@ GameObject:
   - component: {fileID: 693466914}
   - component: {fileID: 693466913}
   - component: {fileID: 693466912}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,6 +616,7 @@ GameObject:
   - component: {fileID: 1147932470}
   - component: {fileID: 1147932474}
   - component: {fileID: 1147932475}
+  - component: {fileID: 1147932476}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -715,6 +716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+  fuerza: 0
 --- !u!54 &1147932475
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -731,6 +733,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1147932476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147932469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3626f166241244b9b93e27ec37d656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1245538738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1192,6 +1206,10 @@ PrefabInstance:
     - target: {fileID: 4277162417366722742, guid: dfcdb20dfb193034ba890f001d58d0f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6460340567368202458, guid: dfcdb20dfb193034ba890f001d58d0f5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfcdb20dfb193034ba890f001d58d0f5, type: 3}
